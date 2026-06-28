@@ -237,7 +237,7 @@ function weekInfo(){
 
 function dayCardEx(e){
   const lw=lastWork(e.id,e.start);
-  const t=draft.ex[e.id]||{w:lw.w,reps:lw.reps||8,done:false,pushOn:false,pw:lw.w+WEIGHT_STEP,preps:6,pdone:false};
+  const t=draft.ex[e.id]||{w:lw.w,reps:lw.reps||10,done:false,pushOn:false,pw:lw.w+WEIGHT_STEP,preps:6,pdone:false};
   draft.ex[e.id]=t;
   const beat=t.done && t.w>lw.w;
   const cls="card"+(t.done?" done":"")+(beat?" pr":"");
